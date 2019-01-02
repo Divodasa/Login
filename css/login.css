@@ -5,34 +5,24 @@ body {
     font-size: 14px;
     color: #fff;
     min-width: 320px;
-}
-
-#header {
     background: url(../img/meik-schneider.png) center no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/*===============.navbar navbar-default==============*/
 
-.navbar.navbar-expand-sm {
+/*===============.navbar navbar-default==============*/
+.navbar-expand-sm {
     margin-top: -44px;
 }
 
-.custom-toggler.navbar-toggler-icon {
-    border-color: #fff;
-}
-
-/*====================.clubvelochitta================*/
-
-.row.clubvelochitta {
-    margin-top: 31px;
-    margin-left: 44px;
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
 }
 
 /*========================.form======================*/
 
-.row.justify-content-end div.col-sm-6.col-lg-3.form{
+.row.justify-content-end div.form{
     background-color: #28292B;
     height: auto;
     margin-top: 60px;
@@ -51,16 +41,16 @@ body {
     background: #28292B;
 }
 
-#login,
-#password{
+.form-group.login .form-control,
+.form-group.password .form-control {
     background: #28292B;
     border: 1px solid rgba(146, 123, 98, 0.2);
     box-shadow: none;
     color: #fff;
 }
 
-#login:hover,
-#password:hover {
+.form-group.login .form-control:hover,
+.form-group.password .form-control:hover {
     border: 1px solid rgba(246, 172, 155, 0.2);
     transition: .5s;
 }
@@ -81,27 +71,28 @@ body {
     box-shadow: none;
 }
 
-.autorization {
+.authorization {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 8em;
 }
 
-.autorization a {
+.authorization a {
     font-weight: 300;
     font-size: 12px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.autorization a:hover {
+.authorization a:hover {
     text-decoration-line: underline;
 }
 
-/*======================.copyrights=====================*/
+/*!*======================.copyrights=====================*!*/
 
 .copyright {
     text-align: center;
+    margin-top: 15px;
 }
 
 .copyright p {
@@ -109,25 +100,24 @@ body {
     font-size: 14px;
 }
 
-.copyright.xs {
-    padding-bottom: 26px;
-}
-
 /*=====================Media requests==================*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 2560px) {
 
-
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1440px) {
+    .clubvelochitta {
+        margin-top: 31px;
+        margin-left: 44px;
+    }
+
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
 
 }
 
@@ -137,60 +127,54 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .row.clubvelochitta {
-        margin-top: 28px;
-        margin-left: 21px;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px) {
-    .row.justify-content-end div.col-sm-6.col-lg-3.form {
+    .row.justify-content-end div.form {
         margin-top: 180px;
     }
     .inform {
         margin-top: 40px;
     }
-    #header {
-        max-height: 400px;
-    }
-    .autorization {
+    .authorization {
         margin-bottom: 4em;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    #header {
-        width: 100%;
-        max-height: 300px;
-    }
-    .row.justify-content-end div.col-sm-6.col-lg-3.form {
-        margin-top: 180px;
-    }
-    .row.clubvelochitta {
-        margin-left: 2px;
+    .clubvelochitta {
+        margin-top: 18px;
+        margin-left: 18px;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1441px) {
-    .row.clubvelochitta {
+    .clubvelochitta {
         margin-top: 70px;
         margin-left: 200px;
     }
-    .row.justify-content-end div.col-lg-3.form {
+    .row.justify-content-end div.form {
         margin-top: 100px;
         margin-right: 200px;
+        max-width: 19%;
     }
-    .autorization {
+    .authorization {
         margin-top: 54px;
-        margin-bottom: 12em;
-    }
-    .row.justify-content-end .form{
-        margin-top: 50px;
+        margin-bottom: 4em;
     }
     .copyright {
-        margin-right: 200px;
+        margin-right: 154px;
     }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .navbar-expand-sm {
+        margin-right: 10px;
+    }
+
 }
