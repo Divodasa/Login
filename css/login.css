@@ -10,10 +10,14 @@ body {
     min-height: 100vh;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
 /*===============.navbar navbar-default==============*/
 .navbar-expand-sm {
-    margin-top: -44px;
+    position: absolute;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -28,7 +32,7 @@ body {
     margin-top: 60px;
 }
 
-.inform {
+.form-logo {
     position: relative;
     text-align: center;
     margin-top: 8em;
@@ -88,14 +92,14 @@ body {
     text-decoration-line: underline;
 }
 
-/*!*======================.copyrights=====================*!*/
+/*======================.copyrights=====================*/
 
-.copyright {
+.copyrights {
     text-align: center;
     margin-top: 15px;
 }
 
-.copyright p {
+.copyrights p {
     font-weight: 300;
     font-size: 14px;
 }
@@ -133,13 +137,23 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px) {
     .row.justify-content-end div.form {
-        margin-top: 180px;
+        margin: 0;
     }
-    .inform {
+    .form-logo {
         margin-top: 40px;
     }
     .authorization {
         margin-bottom: 4em;
+    }
+    body {
+        background: none;
+    }
+    .background img {
+        max-width: 100%;
+        height: auto;
+    }
+    .header {
+        position: absolute;
     }
 }
 
@@ -148,6 +162,10 @@ body {
     .clubvelochitta {
         margin-top: 18px;
         margin-left: 18px;
+    }
+    .navbar-expand-sm {
+        padding-right: 8px;
+        padding-top: 15px;
     }
 }
 
@@ -166,15 +184,14 @@ body {
         margin-top: 54px;
         margin-bottom: 4em;
     }
-    .copyright {
+    .copyrights {
         margin-right: 154px;
     }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width : 481px) {
     .navbar-expand-sm {
-        margin-right: 10px;
+        padding-top: 27px;
     }
-
 }
