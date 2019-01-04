@@ -138,7 +138,7 @@ body {
 @media only screen and (max-width : 575px) {
     .row.justify-content-end div.form {
         margin: 0;
-        height: -webkit-fill-available !important;
+        /*height: -webkit-fill-available !important;*/
     }
     .form-logo {
         margin-top: 40px;
@@ -147,7 +147,7 @@ body {
         margin-bottom: 4em;
     }
     body {
-        background: none;
+        background: #28292B;
     }
     .background img {
         max-width: 100%;
