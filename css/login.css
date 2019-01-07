@@ -1,10 +1,18 @@
 /*==================Спецификации==================*/
 
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: Lato, sans-serif;
     font-size: 14px;
     color: #fff;
     min-width: 320px;
+    background-size: 100%;
+}
+
+.back {
     background: url(../img/meik-schneider.png) center no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -114,7 +122,7 @@ body {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1440px) {
     .clubvelochitta {
-        margin-top: 31px;
+        padding-top: 31px;
         margin-left: 44px;
     }
 
@@ -138,7 +146,7 @@ body {
 @media only screen and (max-width : 575px) {
     .row.justify-content-end div.form {
         margin: 0;
-        /*height: -webkit-fill-available !important;*/
+        min-height: 100vh;
     }
     .form-logo {
         margin-top: 40px;
@@ -146,9 +154,12 @@ body {
     .authorization {
         margin-bottom: 4em;
     }
-    body {
-        background: #28292B;
+    .back {
+        background: none;
     }
+    /*body {*/
+        /*background: #28292B;*/
+    /*}*/
     .background img {
         max-width: 100%;
         height: auto;
@@ -161,6 +172,7 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .clubvelochitta {
+        padding-top: 0;
         margin-top: 18px;
         margin-left: 18px;
     }
@@ -173,7 +185,7 @@ body {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1441px) {
     .clubvelochitta {
-        margin-top: 70px;
+        padding-top: 70px;
         margin-left: 200px;
     }
     .row.justify-content-end div.form {
