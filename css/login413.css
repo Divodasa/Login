@@ -1,0 +1,358 @@
+/*==================Спецификации==================*/
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    min-width: 320px;
+    background-size: 100%;
+}
+
+.back {
+    background: url(../img/meik-schneider.png) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*===============.navbar navbar-default==============*/
+.navbar-expand-md {
+    position: absolute;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+button:focus {
+    outline: none;
+}
+
+.navbar-nav {
+    flex-direction: inherit;
+}
+
+.navbar-collapse .nav-item .nav-link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar-collapse .nav-item .nav-link:hover {
+    color: #c5c5c5;
+}
+
+.navbar {
+    margin-top: -43px;
+}
+
+/*========================.form======================*/
+
+div.fill.form {
+    background-color: #28292B;
+    height: auto;
+    width: 360px;
+    /*float: right;*/
+}
+
+.form-group .form-control {
+    cursor: pointer;
+    background: #28292B;
+    border: 1px solid rgba(146, 123, 98, 0.2);
+    box-shadow: none;
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    height: 46px;
+    border-radius: 2px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group .form-control:hover,
+.form-group .form-control:hover {
+    border: 1px solid rgba(246, 172, 155, 0.2);
+    transition: .5s;
+}
+
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    background: #927B62;
+    border: 1px solid #614e3e;
+    border-radius: 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 60px;
+}
+
+.btn:hover {
+    border: 1px solid #967f65;
+    color: #fff;
+    box-shadow: none;
+}
+
+p.form-header {
+    margin-top: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+p.book-by {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+p.date-sel {
+    font-weight: 300;
+    font-size: 16px;
+    color: #B09E8F;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+p.book-by {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bottom {
+    margin-bottom: 24px;
+}
+
+div.aside {
+    position: relative;
+}
+
+.fa {
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-right: 6px;
+}
+
+/*======================.copyrights=====================*/
+
+.copyrights {
+    text-align: right;
+    margin: 25px 5px 25px 0;
+}
+
+.copyrights.xs {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.copyrights p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*=====================Media requests==================*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 2560px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px) {
+    .clubvelochitta {
+        padding-top: 31px;
+        margin-left: 44px;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.navbar-collapse .nav-item .nav-link {
+    padding-right: 21px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 575px) {
+    .navbar-collapse {
+        margin-left: 28%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .navbar-collapse .nav-item .nav-link {
+        background: rgba(74, 74, 74, 0.67);
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 14px;
+    }
+    .navbar-collapse {
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px) {
+    .row.justify-content-end div.form {
+        margin: 0;
+        width: 100%;
+    }
+    .form-logo {
+        margin-top: 40px;
+    }
+    .authorization {
+        margin-bottom: 4em;
+    }
+    .back {
+        background: none;
+    }
+    .background img {
+        max-width: 100%;
+        height: auto;
+    }
+    .header {
+        position: absolute;
+    }
+    .navbar-expand-md {
+        margin-top: 18px !important;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+    }
+    div .fill.form {
+        /*display: none;*/
+        width: auto;
+        float: none;
+    }
+    p.form-header {
+        padding-top: 28px;
+        margin-top: 0;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .clubvelochitta {
+        padding-top: 0;
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+    .navbar-expand-md {
+        padding-right: 8px;
+        padding-top: 0;
+        width: 100%;
+        margin-top: 13px !important;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 34px;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1441px) {
+    .clubvelochitta {
+        padding-top: 70px;
+        margin-left: 300px;
+    }
+    .row.justify-content-end div.form {
+        max-width: 19%;
+    }
+    .authorization {
+        margin-top: 54px;
+        margin-bottom: 4em;
+    }
+    .copyrights {
+        margin-right: 180px;
+    }
+    .navbar-expand-md {
+        padding-right: 173px;
+        width: 1000px;
+    }
+    div .fill.form {
+        margin-right: 201px;
+        margin-top: 36px !important;
+    }
+    .fa {
+        margin-right: 201px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .navbar-collapse {
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+    /*.row.justify-content-end div.form {*/
+        /*width: 500px;*/
+        /*background-color: #28292B;*/
+        /*height: auto;*/
+        /*margin-top: 60px;*/
+    /*}*/
+    div .fill.form {
+    margin-top: 5px;
+    }
+    .navbar-expand-md {
+        position: relative;
+    }
+    .ml-auto {
+        float: right;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px) {
+    .navbar-expand-sm {
+        padding-top: 27px;
+    }
+}
