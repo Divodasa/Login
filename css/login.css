@@ -12,7 +12,7 @@ body {
     background-size: 100%;
 }
 
-.back {
+.background {
     background: url(../img/meik-schneider.png) center no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -24,7 +24,7 @@ body {
 }
 
 /*===============.navbar navbar-default==============*/
-.navbar-expand-sm {
+.navbar-expand-md {
     position: absolute;
 }
 
@@ -40,49 +40,67 @@ button:focus {
     outline: none;
 }
 
+.navbar-nav {
+    flex-direction: inherit;
+}
+
+.navbar-collapse .nav-item .nav-link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar-collapse .nav-item .nav-link:hover {
+    color: #c5c5c5;
+}
+
+.navbar {
+    margin-top: -43px;
+}
+
 /*========================.form======================*/
 
-.row.justify-content-end div.form{
+div.fill.form {
     background-color: #28292B;
     height: auto;
-    margin-top: 60px;
+    /*width: 360px;*/
 }
 
-.form-logo {
-    position: relative;
-    text-align: center;
-    margin-top: 8em;
-    margin-bottom: 3em;
-}
-
-.form-control {
-    border: 1px solid rgba(146, 123, 98, 0.2);
-    border-radius: 2px;
-    background: #28292B;
-}
-
-.form-group.login .form-control,
-.form-group.password .form-control {
+.form-group .form-control {
     background: #28292B;
     border: 1px solid rgba(146, 123, 98, 0.2);
     box-shadow: none;
     color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    height: 46px;
+    border-radius: 2px;
 }
 
-.form-group.login .form-control:hover,
-.form-group.password .form-control:hover {
+.form-group {
+    display: flex;
+}
+
+.form-group .form-control:hover,
+.form-group .form-control:hover {
     border: 1px solid rgba(246, 172, 155, 0.2);
     transition: .5s;
 }
 
 
-.btn {
+.btn,
+.btn.hide {
     text-transform: uppercase;
     color: #fff;
     background: #927B62;
     border: 1px solid #614e3e;
-    border-radius: 2px;
-    width: 100%;
+    border-radius: 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 60px;
 }
 
 .btn:hover {
@@ -91,28 +109,179 @@ button:focus {
     box-shadow: none;
 }
 
-.authorization {
+p.form-header {
+    padding-top: 28px;
     text-align: center;
-    margin-top: 24px;
-    margin-bottom: 8em;
+    text-transform: uppercase;
+    font-size: 17px;
 }
 
-.authorization a {
+p.book-by {
+    text-transform: uppercase;
+    font-size: 16px;
     font-weight: 300;
-    font-size: 12px;
     text-align: center;
-    color: #FFFFFF;
 }
 
-.authorization a:hover {
-    text-decoration-line: underline;
+p.date-sel {
+    font-weight: 300;
+    font-size: 16px;
+    color: #B09E8F;
+    margin-left: 16px;
+    margin-bottom: 12px;
 }
+
+p.book-by {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bottom {
+    margin-bottom: 24px;
+}
+
+div.aside {
+    position: relative;
+}
+
+.fa {
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+    font-size: 20px;
+    padding-top: 14px;
+}
+
+/*======================.chose-car======================*/
+
+.container-fluid {
+    padding: 0;
+}
+
+div.row.choose-car {
+  flex-grow: 1;
+    background: #e5e5e5;
+}
+
+/*=====================.cars-available==================*/
+
+h3 {
+    color: #28292B;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.digit {
+    color: #927B62;
+    font-weight: 600;
+    font-size: 18px;
+}
+h3.head {
+    padding-top: 28px;
+    margin-left: 30px;
+    margin-bottom: 32px;
+}
+span.description {
+    display: block;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+p.info {
+    font-size: 14px;
+    color: rgba(40, 41, 43, 0.6);
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.cars-available {
+    background-color: #e5e5e5;
+    height: 100%;
+}
+.choose,
+.cars {
+    padding: 0;
+}
+.window h3,
+.window li {
+    color: #28292B;
+}
+.cars-wrap img {
+    max-width: 100%;
+    height: 100%;
+}
+.cars-wrap {
+    padding-left: 30px;
+}
+.window {
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.description ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li div:nth-child(2) {
+    flex: 1 0;
+}
+.description li {
+    border-bottom: 1px solid rgba(146, 123, 98, 0.1);
+}
+.prices {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 7px;
+}
+.price {
+    padding-top: 36px;
+    margin-bottom: 0;
+    color: #28292B;
+    font-size: 18px;
+}
+.value {
+    color: #28292B;
+    font-size: 30px;
+}
+.prices a {
+    font-size: 14px;
+    color: #28292B;
+    margin-top: 11px;
+    display: block;
+    text-decoration: underline;
+}
+.prices a:hover {
+    color: #28292B;
+}
+.second-car {
+    margin-top: 14px;
+}
+.mobile-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.first-block {
+    text-align: left;
+}
+.second-block {
+    text-align: right;
+}
+
 
 /*======================.copyrights=====================*/
 
 .copyrights {
+    text-align: right;
+    margin: 25px 5px 25px 0;
+}
+
+.copyrights.xs {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 .copyrights p {
@@ -137,24 +306,95 @@ button:focus {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1246px) {
+    .cars-wrap {
+        margin-top: 40px;
+        padding-left: 12px;
+    }
+    .first-car,
+    .second-car {
+        height: 220px;
+    }
+    .second-car img {
+        margin-top: 26px;
+    }
+   .cars-wrap img {
+        padding-top: 26px;
+    }
+    span.description {
+        padding-left: 14px;
+    }
+    .price {
+        padding-top: 46px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .price {
+        padding-top: 0;
+    }
+    span.description {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .second-car img {
+        margin-top: 0;
+        padding-bottom: 22px;
+    }
+    .cars-wrap .second-car img {
+        padding-top: 0;
+    }
+    .second {
+        margin-bottom: 31px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+.navbar-collapse .nav-item .nav-link {
+    padding-right: 21px;
+    }
+}
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 575px) {
+    .navbar-collapse {
+        margin-left: 28%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .navbar-collapse .nav-item .nav-link {
+        background: rgba(74, 74, 74, 0.67);
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 14px;
+    }
+    .navbar-collapse {
+        margin-left: 0;
+    }
+    h3.head {
+        margin-bottom: 0;
+    }
+    .first-car img {
+        padding-top: 0;
+        width: 97%;
+    }
+    .second-car img{
+        width: 97%;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px) {
-    .row.justify-content-end div.form {
+    .row.justify-content-start div.form {
         margin: 0;
-        min-height: 100vh;
+        width: 100%;
     }
     .form-logo {
         margin-top: 40px;
@@ -162,18 +402,85 @@ button:focus {
     .authorization {
         margin-bottom: 4em;
     }
-    .back {
+    .background {
         background: none;
     }
-    /*body {*/
-        /*background: #28292B;*/
-    /*}*/
     .background img {
         max-width: 100%;
         height: auto;
     }
     .header {
         position: absolute;
+    }
+    .navbar-expand-md {
+        margin-top: 18px !important;
+        position: relative;
+    }
+    .hide {
+        display: none;
+    }
+    body {
+        background-color: #28292B;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+    }
+    div .fill.form {
+        width: auto;
+        float: none;
+    }
+    p.form-header {
+        padding-top: 28px;
+        margin-top: 0;
+    }
+    .first-car img {
+        position: relative;
+        height: 247px;
+        margin-top: -28px;
+    }
+    .clubvelochitta {
+        margin-left: 29px;
+    }
+    .navbar-expand-md {
+        margin-bottom: 34px;
+    }
+    .copyrights p {
+        text-align: center;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    .form-control::-webkit-input-placeholder {
+        color: #B09E8F;
+    }
+    .form-control::-ms-input-placeholder,
+    .form-control::-moz-placeholder {
+        color: #B09E8F;
+    }
+    .prices {
+        padding-right: 11px;
+        padding-left: 12px;
+    }
+    h3.head {
+        margin-bottom: 11px;
+    }
+    .hide-md {
+        display: none;
+    }
+    .btn {
+        width: 100%;
+        margin-left: 0;
+    }
+    h3.ferrari {
+        padding-top: 7px;
+    }
+    .second-car img {
+        padding-bottom: 0;
+    }
+    #drop-date {
+        margin-bottom: 20px;
     }
 }
 
@@ -182,23 +489,77 @@ button:focus {
     .clubvelochitta {
         padding-top: 0;
         margin-top: 18px;
-        margin-left: 18px;
+        margin-left: 25px;
     }
-    .navbar-expand-sm {
+    .navbar-expand-md {
         padding-right: 8px;
-        padding-top: 15px;
+        padding-top: 0;
+        width: 100%;
+        margin-top: 13px !important;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 34px;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width : 2000px) {
+    .form-wrap .fill.form {
+        margin-left: 300px;
+    }
+    .cars .cars-available {
+        margin-right: 300px;
+    }
+    .header .clubvelochitta {
+        margin-left: 300px;
+    }
+    .navbar.navbar-expand-md {
+        padding-right: 272px;
+    }
+    .cars-wrap .first-car img {
+        width: 100%;
+    }
+    .cars-wrap .second-car img {
+        width: 100%;
+    }
+    span.description {
+        padding-top: 50px;
+    }
+    .price {
+        padding-top: 61px;
+    }
+    .second-car {
+        margin-top: 55px;
+    }
+    h3.head {
+        margin-bottom: 0;
+    }
+    .justify-content-end .copyrights {
+        margin-right: 281px;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1441px) {
+    .first-car img {
+        padding-top: 15px;
+    }
+    .navbar-expand-md {
+        padding-right: 174px;
+    }
     .clubvelochitta {
         padding-top: 70px;
         margin-left: 200px;
     }
     .row.justify-content-end div.form {
-        margin-top: 100px;
-        margin-right: 200px;
         max-width: 19%;
     }
     .authorization {
@@ -206,7 +567,67 @@ button:focus {
         margin-bottom: 4em;
     }
     .copyrights {
-        margin-right: 154px;
+        margin-right: 180px;
+    }
+    div .fill.form {
+        margin-left: 200px;
+        height: inherit;
+    }
+    .form-wrap {
+        height: 100%;
+    }
+    .fa {
+        padding-right: 0;
+    }
+    .cars-available {
+        margin-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .second-car img {
+        margin-top: 0;
+    }
+    .cars-wrap .second-car img {
+        padding-top: 3px;
+        padding-bottom: 21px;
+
+    }
+    .btn {
+        margin-left: 0;
+    }
+    .hide-md h3 {
+        display: none;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .navbar-collapse {
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+    .container-fluid {
+    margin-top: 14px;
+    }
+    .navbar-expand-md {
+        position: relative;
+    }
+    .ml-auto {
+        float: right;
+    }
+    .form-control::-webkit-input-placeholder {
+        color: #28292B;
+    }
+    .mobile-description {
+        display: none;
     }
 }
 
